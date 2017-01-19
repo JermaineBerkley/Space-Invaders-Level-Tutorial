@@ -1,0 +1,31 @@
+html{
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* I had to make two canvases absolute in order to stack the third at top, left 0, 0 */
+#background_canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#enemy_canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#player_canvas{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
